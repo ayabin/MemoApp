@@ -4,7 +4,6 @@ import { router } from 'expo-router';
 
 import Icon from '../../components/Icon';
 
-import Header from '../../components/Header';
 import CircleButton from '../../components/CircleButton';
 
 const handlePress=():void=>{
@@ -14,7 +13,6 @@ const handlePress=():void=>{
 const Detail=():JSX.Element=>{
 		return (
 				<View style={styles.container}>
-					<Header />
 					<View style={styles.memoHeader}>
 						<Text style={styles.memoTitle}>買い物リスト</Text>
 						<Text style={styles.memoDate}>2024年12月24日 10:00</Text>
@@ -25,7 +23,7 @@ const Detail=():JSX.Element=>{
 							3日に肺炎のため、89歳で死去した巨人元監督、長嶋茂雄さんの葬儀・告別式が8日、東京・品川区の桐ヶ谷斎場「雲」で非公開で営まれた。斎場を出てきた参列者は、前を向いて「また明日から頑張ろう」と明るい表情になっていた。長嶋さんがそうさせた。
 						</Text>
 					</ScrollView>
-					<CircleButton onPress={handlePress} style={{top:160,bottom:'auto'}}>
+					<CircleButton onPress={handlePress} style={{top:60,bottom:'auto'}}>
 						<Icon name='pencil' size={40} color='#fff' />
 					</CircleButton>
 				</View>
